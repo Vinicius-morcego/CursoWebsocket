@@ -13,14 +13,15 @@
             var ws = new WebSocket("ws://localhost:8080/chat")
             var mensagem = document.getElementById("mensagem")
             var btnEnviar = document.getElementById("btnEnviar")
-            var mensagens = document.getElementById("mensagens-recebidas")
+            var ul = document.getElementById("mensagens-recebidas")
             btnEnviar.onclick = function(){
                 ws.send(mensagem.value)
             }
+            // Evento de calback para pegar as mensagens do servidor e apresentar em forma de lista na pagina.
             ws.onmessage = function(event){
                 var li = document.createElement("li")
                 li.appendChild(document.createTextNode(event.data))
-                mensagens.appendChild(li)
+                ul.appendChild(li)
             }
         </script>
     </body>

@@ -5,8 +5,8 @@
 // https://auth0.com/
 // ----------------------------------------------------------------------------
 var AUTH0_CONFIG = {
-    domain: "cursochat.auth0.com", // <-- TODO informar "domain"
-    clientId: "ClIeNtIdAlEaToRiOdOcUrSoChAt", // <-- TODO informar "clientId"
+    domain: "dev-s7xnrmosdpw8lp1d.us.auth0.com", // <-- TODO informar "domain"
+    clientId: "Opbg1DakCxMGVWOKjwqN8jJO5weIoWPV", // <-- TODO informar "clientId"
     cacheLocation: "localstorage",
     useRefreshTokens: true
 }
