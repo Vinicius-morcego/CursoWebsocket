@@ -6,11 +6,13 @@ import com.auth0.jwk.JwkException;
 import com.auth0.jwk.UrlJwkProvider;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cache.annotation.Cacheable;
+import org.springframework.stereotype.Component;
 
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.security.PublicKey;
 
+@Component
 public class JsonWebKeyProvider implements KeyProvider{
 
     private final UrlJwkProvider provider;
